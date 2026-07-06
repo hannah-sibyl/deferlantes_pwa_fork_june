@@ -399,6 +399,7 @@ function applyButtonPress(btn, now) {
       else { active.clear(); active.add(val); }
     } else {
       active.delete('Aucune');
+      active.delete('')
       if (active.has(val)) { active.delete(val); }
       else { active.add(val); }
     }
